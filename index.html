@@ -258,7 +258,7 @@
                     quiz.innerHTML += "<button class='prev' id='previousButton' onclick='goBack()'>Previous Question</button><br>"; 
                 }
 
-                quiz.innerHTML += "<button id='begin' onclick='restartQuiz()'>End the Quiz</button>";
+                quiz.innerHTML += "<button id='begin' onclick='endQuiz()'>End the Quiz</button>";
                 
             }   
             
@@ -273,8 +273,8 @@
                 }
             }
             
-            function restartQuiz() { //allow the user to start over
-                pos = questionSet.length;
+            function endQuiz() { //allow the user to end immediately and view results
+                pos = questionSet.length; //trigger first if statement in questionCreation
                 questionCreation();
             }
 
