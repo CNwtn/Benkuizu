@@ -252,13 +252,13 @@
                 quiz.innerHTML += "<input type='button' class='options' name='a' value='" + optionA + "' onclick='addPoints(this)'>";
                 quiz.innerHTML += "<input type='button' class='options' name='b' value='" + optionB + "' onclick='addPoints(this)'>";
                 quiz.innerHTML += "<input type='button' class='options' name='c' value='" + optionC + "' onclick='addPoints(this)'>";
-                quiz.innerHTML += "<input type='button' class='options' name='d' value='" + optionD + "' onclick='addPoints(this)'><br><br><br>";
+                quiz.innerHTML += "<input type='button' class='options' name='d' value='" + optionD + "' onclick='addPoints(this)'><br>";
 
                 if(pos > 0){ //prevent previous button from showing on first question
                     quiz.innerHTML += "<button class='prev' id='previousButton' onclick='goBack()'>Previous Question</button><br>"; 
                 }
 
-                quiz.innerHTML += "<button id='begin' onclick='instructionView()'>Restart</button>";
+                
                 
             }   
             
@@ -272,7 +272,7 @@
                     subtract 1 from correct answer total in case they change their answer to the incorrect one*/
                 }
             }
-            
+
             function addPoints(x){ //check which option the user chose and use to calculate their result
                 var buttonClicked = x.value;
             
