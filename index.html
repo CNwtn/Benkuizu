@@ -17,7 +17,7 @@
         <div id="quizBody">
             <p id="firstPage">
                 <img src="pexels-engin-akyurt-1498273.jpg" id="kanji">
-                <span style="font-size: 2em;">こんにちは！</span><br><br>
+                <span>こんにちは！</span><br><br>
                 I created this website as a personal project for my web-design portfolio. In doing so,
                 I am able to mix my love for foreign languages and my aspiration of being a web developer
                 to create a basic quiz to test the progress of new learner of Japanese.<br><br>
@@ -255,8 +255,10 @@
                 quiz.innerHTML += "<input type='button' class='options' name='d' value='" + optionD + "' onclick='addPoints(this)'><br><br><br>";
 
                 if(pos > 0){ //prevent previous button from showing on first question
-                    quiz.innerHTML += "<button class='prev' id='previousButton' onclick='goBack()'>Previous Question</button>"; 
+                    quiz.innerHTML += "<button class='prev' id='previousButton' onclick='goBack()'>Previous Question</button><br>"; 
                 }
+
+                quiz.innerHTML += "<button id='begin' onclick='instructionView()'>Restart</button>";
                 
             }   
             

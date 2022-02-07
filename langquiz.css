@@ -19,6 +19,10 @@ body {
   font-size: 1.12em;
 }
 
+#quizBody #firstPage span {
+  font-size: 2em;
+}
+
 #quizBody ol {
   font-size: 1.12em;
 }
@@ -93,6 +97,7 @@ footer {
   }
   #quizBody input {
     width: 100%;
+    font-size: 100%;
   }
   #quizBody #kanji {
     display: none;
@@ -102,9 +107,17 @@ footer {
   }
 }
 
+/*for tablets*/
 @media screen and (max-width: 1024px) {
   #quizBody {
     width: 75%;
+  }
+  #quizBody #firstPage span {
+    font-size: 1em;
+  }
+  #quizBody input {
+    width: 100%;
+    font-size: 150%;
   }
 }
 /*# sourceMappingURL=langquiz.css.map */

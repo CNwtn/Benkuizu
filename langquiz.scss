@@ -21,6 +21,10 @@ body {
     #firstPage {
         margin-top: 5%;
         font-size: 1.12em;
+
+        span {
+            font-size: 2em;
+        }
     }
 
     ol {
@@ -89,6 +93,7 @@ footer {
 
         input {
             width: 100%;
+            font-size: 100%;
         }
 
         #kanji{
@@ -101,8 +106,19 @@ footer {
         }
     }
 }
+/*for tablets*/
 @media screen and(max-width: 1024px){
     #quizBody {
         width: 75%;
+
+        #firstPage {
+            span {
+                font-size: 1em;
+            }
+        }
+        input {
+            width: 100%;
+            font-size: 150%;
+        }
     }
 }
