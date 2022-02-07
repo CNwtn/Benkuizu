@@ -258,7 +258,7 @@
                     quiz.innerHTML += "<button class='prev' id='previousButton' onclick='goBack()'>Previous Question</button><br>"; 
                 }
 
-                
+                quiz.innerHTML += "<button id='begin' onclick='restartQuiz()'>End the Quiz</button>";
                 
             }   
             
@@ -271,6 +271,11 @@
                      /*if the user goes back to a question and that question was correct, 
                     subtract 1 from correct answer total in case they change their answer to the incorrect one*/
                 }
+            }
+            
+            function restartQuiz() { //allow the user to start over
+                pos = questionSet.length;
+                questionCreation();
             }
 
             function addPoints(x){ //check which option the user chose and use to calculate their result
